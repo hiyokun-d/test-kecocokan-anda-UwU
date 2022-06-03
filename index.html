@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perjodohan HARAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="TITLE">TEST KE COCOKAN KALIAN DENGAN DIA 100% RIL</h1>
+
+    <div id="text-container">
+        <input type="text" id="first-name" class="NAMA" placeholder="nama kalian/teman">
+        <span id="love-icon">❤️</span>
+        <span id="hasil">0</span>
+        <input type="text" id="second-name" class="NAMA" placeholder="nama pasangan">
+        <input type="submit" value="JALANKAN MESIN DEL 9000 mesin pencari cinta" class="button-submit">
+    </div>
+
+    <p>bukan hiyo yang bikin ini serius</p>
+    <script>
+        var firstName = document.getElementById('first-name');
+        var secondName = document.getElementById('second-name');
+        var loveIcon = document.getElementById('love-icon');
+        var hasil = document.getElementById('hasil');
+
+        var buttonSubmit = document.getElementsByClassName('button-submit')[0];
+    
+        let sekali_pakai_teknologi = true;
+            buttonSubmit.addEventListener('click', function() {
+                var firstNameValue = firstName.value;
+                var secondNameValue = secondName.value;
+
+                if(sekali_pakai_teknologi) {
+                    sekali_pakai_teknologi = false;
+                if (firstNameValue.length > 0 && secondNameValue.length > 0) {
+                    hasil.style.color = '#00ff00';
+                   let hasilnya = Math.random() * 100 ;
+                   if(hasilnya > 50) {
+                       hasil.innerHTML = `${Math.round(hasilnya)}% COCOK \n developer says: SEMOGA LANGGENG MAS`;
+                       loveIcon.innerHTML = '💖';
+                     } else if(hasilnya >=0 && hasilnya <= 30) {
+                          hasil.innerHTML = Math.round(hasilnya) + '% gak cocok anjir ah udah lah gak seru';
+                          loveIcon.innerHTML = '💔';
+                    }
+                     //hasil.innerHTML = Math.round(hasilnya) + "% \n SEMOGA LANGGENG MAS ^_^";
+                    loveIcon.style.animation = "none"
+                    hasil.style.display = 'block';
+                } else {
+                    hasil.style.color = '#ff0000';
+                    hasil.innerHTML = "NAMA KALIAN/TEMAN KOSONG";
+                    hasil.style.display = 'block';
+                }
+            } else location.reload()
+            });
+    </script>
+
+
+    <!-- AWAOKOAWKOAWKAOWKAWOKAWOKAWOAWKOAWKOAWKAOWK -->
+</body>
+</html>
